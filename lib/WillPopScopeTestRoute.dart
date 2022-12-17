@@ -16,7 +16,7 @@ class WillPopScopeTestRouteState extends State<WillPopScopeTestRoute> {
       onWillPop: () async {
         if (_lastPressedAt == null ||
             DateTime.now().difference(_lastPressedAt!) > Duration(seconds: 1)) {
-          //两次点击间隔超过1秒则重新计时
+          //两次点击间隔超过1秒则重新计时,
           _lastPressedAt = DateTime.now();
           return false;
         }
